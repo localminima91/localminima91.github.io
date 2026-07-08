@@ -104,6 +104,25 @@ a { color: var(--accent); }
   flex-shrink: 0;
 }
 
+.quick-facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 14px;
+  row-gap: 6px;
+  margin: 14px 0;
+  font-size: 0.92rem;
+}
+
+.quick-facts dt {
+  color: var(--muted);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.quick-facts dd {
+  margin: 0;
+}
+
 .socials {
   display: flex;
   gap: 10px;
