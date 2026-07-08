@@ -238,6 +238,38 @@ ul.philosophy {
   font-weight: 600;
 }
 
+.note-item {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.note-item:last-child {
+  border-bottom: none;
+}
+
+.note-meta {
+  margin-bottom: 4px;
+}
+
+.note-date {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.note-title {
+  margin: 4px 0 8px;
+}
+
+.note-item code {
+  background: #f4f6f8;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
 .news-photos {
   display: flex;
   flex-wrap: wrap;
