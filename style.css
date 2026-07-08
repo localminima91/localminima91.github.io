@@ -209,6 +209,18 @@ ul.philosophy {
   margin-bottom: 6px;
 }
 
+.if-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: #eef4f8;
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
 .news-item {
   display: flex;
   gap: 18px;
