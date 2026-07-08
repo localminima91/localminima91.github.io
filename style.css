@@ -123,16 +123,24 @@ a { color: var(--accent); }
   margin: 0;
 }
 
-.socials {
+.cv-social-row {
   display: flex;
+  align-items: center;
   gap: 10px;
-  margin-top: 12px;
+  flex-wrap: wrap;
+  margin: 10px 0 4px;
 }
 
-.socials img {
+.cv-social-row img {
   width: 28px;
   height: 28px;
   border-radius: 4px;
+}
+
+.social-emoji {
+  font-size: 1.3rem;
+  line-height: 1;
+  text-decoration: none;
 }
 
 ul.philosophy {
@@ -144,7 +152,7 @@ ul.philosophy {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin: 4px 0 4px;
+  margin: 0;
   padding: 6px 14px;
   font-weight: 500;
   font-size: 0.88rem;
@@ -314,20 +322,6 @@ ul.philosophy {
   object-fit: cover;
   border-radius: 6px;
   border: 1px solid var(--border);
-}
-
-.contact-block {
-  display: flex;
-  gap: 28px;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.contact-block img.avatar {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
 }
 
 footer {
