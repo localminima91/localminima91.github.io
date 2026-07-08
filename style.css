@@ -141,9 +141,21 @@ ul.philosophy {
 }
 
 .cv-link {
-  display: inline-block;
-  margin-top: 0.6em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0 4px;
+  padding: 6px 14px;
   font-weight: 500;
+  font-size: 0.88rem;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent);
+}
+
+.cv-link:hover {
+  background: #eef4f8;
 }
 
 .research-item {
