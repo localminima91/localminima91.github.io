@@ -91,14 +91,14 @@ a { color: var(--accent); }
 .profile {
   display: flex;
   gap: 28px;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 1.5em;
 }
 
-.profile img {
-  width: 180px;
-  height: 180px;
+.profile img.profile-photo {
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
