@@ -262,6 +262,66 @@ ul.philosophy {
   margin-bottom: 6px;
 }
 
+.pub-badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+  line-height: 1.7;
+}
+
+a.badge {
+  text-decoration: none;
+}
+
+.badge-link {
+  background: #eef4f8;
+  color: var(--accent);
+  border: 1px solid #cfe0ea;
+}
+
+.badge-link:hover {
+  background: #dceaf3;
+}
+
+.badge-oral {
+  background: #fdf3e0;
+  color: #8a5a00;
+  border: 1px solid #f0d9a8;
+}
+
+.badge-choice {
+  background: #eafaf0;
+  color: #1f7a4d;
+  border: 1px solid #bfe8d1;
+}
+
+.badge-choice:hover {
+  background: #ddf5e8;
+}
+
+.badge-featured {
+  background: #f1eefb;
+  color: #5b3fa0;
+  border: 1px solid #d9d0f0;
+}
+
+.badge-award {
+  background: #fdecec;
+  color: #a23b3b;
+  border: 1px solid #f3caca;
+}
+
 .news-item {
   display: flex;
   gap: 18px;
