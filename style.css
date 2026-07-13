@@ -391,3 +391,8 @@ footer {
   padding: 30px 20px;
   border-top: 1px solid var(--border);
 }
+
+.visit-badge {
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
