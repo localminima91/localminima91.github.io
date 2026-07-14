@@ -392,7 +392,9 @@ footer {
   border-top: 1px solid var(--border);
 }
 
-.visit-badge {
-  margin-bottom: 10px;
-  opacity: 0.9;
+.visit-count {
+  margin: 0 0 6px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  opacity: 0.8;
 }

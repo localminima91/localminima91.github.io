@@ -64,8 +64,14 @@
 </main>
 
 <footer>
-<img class="visit-badge" src="https://hits.dwyl.com/donghyeon-lee-site/personal-website.svg?style=flat-square" alt="Visit counter"><br>
+<p class="visit-count">Visits: <span id="visit-count">&hellip;</span></p>
 &copy; <span id="year"></span> Donghyeon Lee</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+fetch('https://abacus.jasoncameron.dev/hit/donghyeon-lee-site/personal-website')
+  .then(function(r) { return r.json(); })
+  .then(function(data) { document.getElementById('visit-count').textContent = data.value; })
+  .catch(function() { document.getElementById('visit-count').textContent = '—'; });
+</script>
 </body>
 </html>
