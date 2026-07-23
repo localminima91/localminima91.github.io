@@ -64,14 +64,18 @@
 </main>
 
 <footer>
-<p class="visit-count">Visits: <span id="visit-count">&hellip;</span></p>
+<p class="visit-count">Today's visits: <span id="visit-count">&hellip;</span></p>
 &copy; <span id="year"></span> Donghyeon Lee</footer>
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
-fetch('https://abacus.jasoncameron.dev/hit/donghyeon-lee-site/personal-website')
+var todayKey = 'daily-' + new Date().toISOString().slice(0, 10);
+fetch('https://abacus.jasoncameron.dev/hit/donghyeon-lee-site/' + todayKey)
   .then(function(r) { return r.json(); })
   .then(function(data) { document.getElementById('visit-count').textContent = data.value; })
   .catch(function() { document.getElementById('visit-count').textContent = '—'; });
+/* Running lifetime total is tracked silently (not shown on the page).
+   Check it anytime at: https://abacus.jasoncameron.dev/get/donghyeon-lee-site/personal-website */
+fetch('https://abacus.jasoncameron.dev/hit/donghyeon-lee-site/personal-website').catch(function() {});
 </script>
 </body>
 </html>
