@@ -61,6 +61,18 @@ nav ul li a.active {
   color: var(--accent);
 }
 
+nav ul li a.lang-switch {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 11px;
+  font-size: 0.85rem;
+}
+
+nav ul li a.lang-switch:hover {
+  background: #eef4f8;
+  color: var(--accent);
+}
+
 main {
   max-width: var(--max-width);
   margin: 0 auto;
