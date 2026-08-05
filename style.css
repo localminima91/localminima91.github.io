@@ -104,7 +104,6 @@ a { color: var(--accent); }
   display: flex;
   gap: 28px;
   align-items: center;
-  flex-wrap: wrap;
   margin-bottom: 1.5em;
 }
 
@@ -114,6 +113,18 @@ a { color: var(--accent); }
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .quick-facts {
@@ -138,7 +149,7 @@ a { color: var(--accent); }
 .cv-social-row {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
   margin: 10px 0 4px;
 }
@@ -163,11 +174,11 @@ ul.philosophy {
 .cv-link {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   margin: 0;
-  padding: 6px 14px;
+  padding: 5px 10px;
   font-weight: 500;
-  font-size: 0.88rem;
+  font-size: 0.78rem;
   text-decoration: none;
   border: 1px solid var(--border);
   border-radius: 999px;
