@@ -107,12 +107,22 @@ a { color: var(--accent); }
   margin-bottom: 1.5em;
 }
 
-.profile img.profile-photo {
+.profile-photo-wrap {
   width: 220px;
   height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
+  border-radius: 50%;
+  overflow: hidden;
   flex-shrink: 0;
+  position: relative;
+}
+
+.profile-photo-wrap .profile-photo {
+  position: absolute;
+  width: 423px;
+  height: 426px;
+  max-width: none;
+  left: -113px;
+  top: -82px;
 }
 
 .profile-info {
