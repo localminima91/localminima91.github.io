@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto Mono", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
@@ -82,6 +82,7 @@ main {
 }
 
 h1 {
+  font-family: "Roboto Mono", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   font-size: 1.9rem;
   margin-bottom: 0.4em;
 }
